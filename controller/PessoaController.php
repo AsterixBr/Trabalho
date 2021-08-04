@@ -4,7 +4,7 @@ require_once 'C:/xampp/htdocs/PHPMatutinoPDO/model/Pessoa.php';
 class PessoController {
 
     public function inserirPessoa($nome, $dtNasc, $login, $senha, 
-            $perfil, $email, $cpf){
+            $cep, $perfil, $email, $cpf){
         
         $endereco = new Endereco();
         $endereco->setCep($cep);
