@@ -1,12 +1,11 @@
 <?php
-include_once 'controller/ProdutoController.php';
-include_once './model/Produto.php';
-include_once './model/Fornecedor.php';
-include_once './model/Mensagem.php';
-include_once 'controller/FornecedorController.php';
+include_once '/xampp/htdocs/Trabalho/controller/PessoaController.php';
+include_once '/xampp/htdocs/Trabalho/model/Produto.php';
+include_once '/xampp/htdocs/Trabalho/model/Fornecedor.php';
+include_once '/xampp/htdocs/Trabalho/model/Mensagem.php';
+include_once '/xampp/htdocs/Trabalho/controller/FornecedorController.php';
 $fcc = new FornecedorController();
 $msg = new Mensagem();
-$pr = new Produto();
 $fornecedor = new Fornecedor();
 $pr->setFornecedor($fornecedor);
 $btEnviar = FALSE;

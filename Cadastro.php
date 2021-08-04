@@ -65,7 +65,7 @@
                         $email = $_POST['email'];
 
                         $pc = new PessoaController();
-                        include_once 'Trabalho/controller/PessoaController.php';
+                        include_once '/controller/PessoaController.php';
                         echo "<p>".$pc->inserirPessoa($nome, $dtNasc, 
                             $login, $senha, $perfil, $email, $cpf)."</p>";
                     }
